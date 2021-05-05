@@ -25,7 +25,7 @@ module full_tb;
         .sum(sum2_tb)
     );
 
-    assign cout_tb = cout1_tb | cout2_tb;
+    assign cout_tb = cout1_tb | cout2_tb; //or gate |
     assign sum_tb = sum2_tb;
     initial begin
         a_tb = 1'b0;
